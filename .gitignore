@@ -1,0 +1,15 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore environment variable files
+.env
+
+# Optional: Ignore other common files and directories
+.DS_Store
+dist/
+build/
+.cache/
+.vscode/
+.idea/
+*.log
+*.lock
