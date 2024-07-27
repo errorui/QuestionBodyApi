@@ -1,10 +1,15 @@
 const express = require('express');
 const { Leetcode } = require('@codingsnack/leetcode-api');
 const cheerio = require('cheerio');
+const cors = require('cors');  // Import the cors package
 require('dotenv').config()
 
 const app = express();
 const port = 4000;
+
+// Enable CORS for all routes
+app.use(cors());
+
 
 // Middleware to parse JSON bodies
 app.use(express.json());
